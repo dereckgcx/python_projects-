@@ -1,6 +1,6 @@
 import re
 
-phoneNumRegex = re.compile(r'\d\d\d\d-\d\d\d\d')
+phoneNumRegex = re.compile(r'(\d\d\d) (\d\d\d\d-\d\d\d\d)')
 
-matchOb = phoneNumRegex.search('Is the number 4255-2525?')
-print (f'Phone number found: {matchOb.group()}')
+mo = phoneNumRegex.search('Is the number 502 5980-8265cle?')
+print(mo.group(0))
