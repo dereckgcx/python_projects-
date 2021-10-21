@@ -21,12 +21,5 @@ batRegex = re.compile(r'Bat(wo)?man') #this section specifies the optional part
 mo3 = batRegex.search('The Adventures of Batwoman')
 print (mo3.group())
 
-#
 
-phoneRegex = re.compile(r'(\(\d\d\d\))?\d\d\d\d-\d\d\d\d') #match zero or one of the group preceding the question mark
-mox = phoneRegex.search('My current phone number is (502)5970-9268')
-print (mox.group())
-
-mox1 = phoneRegex.search('My current phone number is 4136-6940')
-print (mox1.group())
 
